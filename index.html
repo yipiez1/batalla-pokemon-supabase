@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Batalla Pokémon</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  </head>
+
+  <body>
+    <div class="escritorio">
+      <img class="fondo-batalla" src="img/bg-earthycave-1.jpg" />
+
+      <img class="poke-j1" src="" />
+      <img class="poke-j2" src="" />
+      
+      <img class="pokeball-1" src="img/pokeball.png" /> 
+      <img class="icon-j1-1" src="" style="opacity: 0;" /> 
+      
+      <img class="pokeball-2" src="img/pokeball.png" style="opacity: 0;" />
+      <img class="icon-j1-2" src="" />
+      
+      <img class="pokeball-3" src="img/pokeball.png" style="opacity: 0;" />
+      <img class="icon-j1-3" src="" />
+
+      <img class="pokeball-4" src="img/pokeball.png" />
+      <img class="icon-j2-1" src="" style="opacity: 0;" /> 
+      
+      <img class="pokeball-5" src="img/pokeball.png" style="opacity: 0;" />
+      <img class="icon-j2-2" src="" />
+      
+      <img class="pokeball-6" src="img/pokeball.png" style="opacity: 0;" />
+      <img class="icon-j2-3" src="" />
+
+      <div class="info info-j1">
+        <div class="nombre-poke">Cargando...</div> 
+        <div class="barra-fondo barra-j1"></div>
+        <div class="barra-vida barra-j1"></div>
+        <div class="hp-texto hp-j1">HP: --</div>
+      </div>
+      
+      <div class="info info-j2">
+        <div class="nombre-poke">Cargando...</div> 
+        <div class="barra-fondo barra-j2"></div>
+        <div class="barra-vida barra-j2"></div>
+        <div class="hp-texto hp-j2">HP: --</div>
+      </div>
+
+      <div class="menu-ataque">
+        <button class="btn-ataque" data-ataque-id="1"></button>
+        <button class="btn-ataque" data-ataque-id="2"></button>
+        <button class="btn-ataque" data-ataque-id="3"></button>
+        <button class="btn-ataque btn-atras" data-ataque-id="4">ATRÁS</button>
+      </div>
+      
+      <div class="menu-cambio"></div>
+
+      <div class="controles-principales">
+          <div class="btn-luchar">LUCHAR</div>
+          <div class="btn-cambiar">CAMBIAR</div>
+          <div class="btn-huir">HUIR</div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script> 
+  </body>
+</html>
